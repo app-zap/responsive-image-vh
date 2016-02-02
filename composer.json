@@ -1,0 +1,9 @@
+{
+	"name": "app-zap/responsive-image-vh",
+	"description": "Responsive ImageViewHelper for Fluid",
+	"autoload": {
+		"psr-4": {
+			"AppZap\\ResponsiveImageVh\\": "Classes/"
+		}
+	}
+}
