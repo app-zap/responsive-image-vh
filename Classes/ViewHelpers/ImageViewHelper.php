@@ -57,7 +57,7 @@ class ImageViewHelper extends AbstractViewHelper implements CompilableInterface
      */
     protected static function getImageUrl($arguments, $image)
     {
-        if ($arguments['maxWidth'] < $image['width'] || $arguments['maxHeight'] < $image['height']) {
+        if ((int)$arguments['maxWidth'] < (int)$image['width'] || (int)$arguments['maxHeight'] < (int)$image['height']) {
             return self::getContentObject()->cObjGetSingle('IMG_RESOURCE', [
                 'file' => $image['url'],
                 'file.' => [
